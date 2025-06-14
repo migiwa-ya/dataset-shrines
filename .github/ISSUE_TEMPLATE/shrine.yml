@@ -1,0 +1,145 @@
+name: Shrine Data Update / 新規・修正リクエスト
+description: "Add a new shrine file (`content/shrines/*.md`) or propose corrections to an existing one."
+title: "[Shrine] <正式名称> - <都道府県>/<区域>"
+labels:
+  - shrine
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **ご協力ありがとうございます！**  
+        必須欄は *（必須）* と表示しています。
+
+  # ---------- 基本情報 ----------
+  - type: input
+    id: id
+    attributes:
+      label: ID （必須）
+      description: 半角英数字（新規の場合は既存 ID と重複しない値）。手元で未定の場合は `TBD` と記入してください。
+      placeholder: "0AHQk"
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: 名称 （必須）
+      placeholder: "貴舩神社"
+    validations:
+      required: true
+
+  - type: input
+    id: prefecture
+    attributes:
+      label: 都道府県 （必須）
+      placeholder: "東京都"
+    validations:
+      required: true
+
+  - type: input
+    id: district
+    attributes:
+      label: 区域（市郡区・町村） （必須）
+      placeholder: "大田区"
+    validations:
+      required: true
+
+  - type: input
+    id: lat
+    attributes:
+      label: 緯度 (decimal) （必須）
+      placeholder: "35.569466"
+    validations:
+      required: true
+
+  - type: input
+    id: lon
+    attributes:
+      label: 経度 (decimal) （必須）
+      placeholder: "139.737946"
+    validations:
+      required: true
+
+  # ---------- オプション情報 ----------
+  - type: textarea
+    id: aliases
+    attributes:
+      label: 別名・総称（任意）
+      placeholder: |
+        総称: ○○大社
+        別名:
+          - △△神社
+          - ××さん
+      render: markdown
+
+  - type: textarea
+    id: address
+    attributes:
+      label: 住所・郵便番号・アクセス（任意）
+      placeholder: |
+        郵便番号: 143-0012
+        住所: 東京都大田区大森東3-9-19
+        アクセス: 京急本線「大森町駅」から徒歩8分
+      render: markdown
+
+  - type: textarea
+    id: tel
+    attributes:
+      label: 電話番号 (複数可／任意)
+      placeholder: |
+        - 番号: 03-1234-5678
+          説明: 社務所
+        - 番号: 03-8765-4321
+          説明: 祭事問い合わせ
+      render: markdown
+
+  # ---------- 祭神 ----------
+  - type: textarea
+    id: deities
+    attributes:
+      label: 祭神リスト (ID と 名称) *（必須、1 行 1 祭神）*
+      description: |
+        例 `vLq 高龗神`
+        ID は [祭神データ](https://github.com/migiwa-ya/dataset-deities) を参照するか、
+        お手間であれば `TBD` と記入してください。
+      placeholder: |
+        vLq 高龗神
+        A6J 伊邪那岐命
+      render: markdown
+    validations:
+      required: true
+
+  # ---------- 祭事 ----------
+  - type: textarea
+    id: events
+    attributes:
+      label: 祭事情報（任意）
+      description: |
+        1 行 1 祭事。必要に応じてカラムを追加し、欠ける場合は `-` または空欄可。  
+        例：  
+        ```
+        名称: 例祭, 開催月日: 10-10, 旧暦: false, 備考: -
+        ```
+      placeholder: |
+        名称: 例祭, 日付区分: 絶対日付, 開催月日: 10-10, 旧暦: false
+        名称: ○○祭, 日付区分: 第何週, 開催月: 7, 開催月第何週: 3, 開催月何曜日: 日, 旧暦: false
+      render: markdown
+
+  # ---------- 参考資料 ----------
+  - type: textarea
+    id: refs
+    attributes:
+      label: 出典・参考 URL
+      description: 公式サイト、神社庁ページ、文献など信頼できる情報源を列挙してください。
+      placeholder: |
+        - https://example.com/shrine-official
+        - 『○○市史』第3巻 p.123
+      render: markdown
+
+  # ---------- 追加メモ ----------
+  - type: textarea
+    id: notes
+    attributes:
+      label: その他メモ
+      description: 由緒、歴史、建築、または上記の項目にない情報を記載してください。
+      render: markdown
