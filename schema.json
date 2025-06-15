@@ -55,6 +55,10 @@
           "備考": { "type": ["string", "number", "null"] }
         }
       }
+    },
+    "画像": {
+      "type": "array",
+      "items": { "type": "string" }
     }
   }
 }
