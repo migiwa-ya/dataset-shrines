@@ -21,11 +21,13 @@ ID: KvOqa
     開始オフセット: 0
     終了オフセット: 0
     備考: 旧例祭日　旧暦八月十七日
-画像: 
-  - https://migiwa-ya.github.io/jinmyocho-data/images/2025-06-18-24b8a5a8-81fb-4218-b578-b25e00047738.jpg
-  - https://migiwa-ya.github.io/jinmyocho-data/images/2025-06-18-a3d148a9-5768-41fe-a88c-038c3f38a66e.jpg
-  - https://migiwa-ya.github.io/jinmyocho-data/images/2025-06-18-087bb31a-6ede-44c0-a0c1-6dde97e99d30.jpg
-  - https://migiwa-ya.github.io/jinmyocho-data/images/2025-06-18-0aafbac3-c32d-46b6-954e-ddd8cf3d4d36.jpg
+画像:
+  [
+    https://migiwa-ya.github.io/jinmyocho-data/images/2025-06-18-24b8a5a8-81fb-4218-b578-b25e00047738.jpg,
+    https://migiwa-ya.github.io/jinmyocho-data/images/2025-06-18-a3d148a9-5768-41fe-a88c-038c3f38a66e.jpg,
+    https://migiwa-ya.github.io/jinmyocho-data/images/2025-06-18-087bb31a-6ede-44c0-a0c1-6dde97e99d30.jpg,
+    https://migiwa-ya.github.io/jinmyocho-data/images/2025-06-18-0aafbac3-c32d-46b6-954e-ddd8cf3d4d36.jpg,
+  ]
 ---
 
 ## 浦島神社由来（由緒書き）
