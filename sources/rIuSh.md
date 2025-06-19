@@ -40,6 +40,7 @@ ID: rIuSh
     https://migiwa-ya.github.io/jinmyocho-data/images/2025-06-19-b0ac6b26-b876-4164-b5f7-db8b9a77e67d.jpg,
     https://migiwa-ya.github.io/jinmyocho-data/images/2025-06-19-99388481-1d02-4765-a31e-4adda9316618.jpg,
     https://migiwa-ya.github.io/jinmyocho-data/images/2025-06-19-41266544-37ab-4c45-a0ca-b75cc9210493.jpg,
+    https://migiwa-ya.github.io/jinmyocho-data/images/2025-06-19-d7f4cf67-a71a-4cf8-97d3-76e812bcb7ad.jpg,
   ]
 ---
 
