@@ -31,7 +31,7 @@ ID: rIuSh
     開始オフセット: 0
     終了オフセット: 0
     旧暦: true
-    備考: null
+    備考: 旧暦
 画像:
   [
     https://migiwa-ya.github.io/jinmyocho-data/images/2025-06-19-fcbe3150-042a-4cc0-a0ae-97dbfd17b03e.jpg,
